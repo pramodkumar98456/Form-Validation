@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js">
+      </script>  
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form class="modal-content" name="myform" method="post" action="abc.jsp" onsubmit="return validateform()">
+    <div class="container">
+      <h1>Please fill in this form to create an account</h1>
+     <hr>
+      <label for="Name"><b>Full Name</b></label>
+      <input type="text" placeholder="Enter Full Name" name="name" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="PhoneNo."><b>Phone Number</b></label>
+      <input type="text" placeholder="Enter Phone Number" id="number"name="number" pattern="[1-9]{1}[0-9]{9}" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required>
+
+      <label for="Confirm password"><b>Confirm Password</b></label>
+      <input type="password" placeholder="Confirm Password" name="confirmpassword" required>
+
+      
+      <div class="clearfix">
+        <button type="submit" onclick="myFunction()" class="submit">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+</body>
+</html>
